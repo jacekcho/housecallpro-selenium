@@ -6,9 +6,15 @@ import org.testng.annotations.Test;
 public class HouseCallProTest {
 
     @Test
-    public void shouldDoTheTest() {
+    public void shouldAddNewJob() {
         // given
-        new LoginPage().open();
+        new LoginPage()
+                .open()
+                .loginUser()
+                .clickNewButton()
+                .clickJobButton()
+                .clickNewCustomerButton()
+                .createCustomer();
 
         // when
 
