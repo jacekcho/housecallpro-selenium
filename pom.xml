@@ -11,6 +11,50 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <selenide.version>6.12.3</selenide.version>
+        <testng.version>7.7.1</testng.version>
+        <java.faker.version>1.0.2</java.faker.version>
+        <archaius-core.version>0.7.7</archaius-core.version>
+        <log4j.version>1.2.17</log4j.version>
+        <slf4j.version>1.7.25</slf4j.version>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>${selenide.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>${java.faker.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.archaius</groupId>
+            <artifactId>archaius-core</artifactId>
+            <version>${archaius-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+    </dependencies>
 </project>
