@@ -14,7 +14,7 @@ public class HouseCallProTest {
                 .clickNewButton()
                 .clickJobButton()
                 .clickNewCustomerButton()
-                .createCustomer();
+                .createNewCustomer();
 
         // when
 
