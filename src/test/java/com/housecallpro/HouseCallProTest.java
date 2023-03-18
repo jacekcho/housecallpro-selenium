@@ -1,6 +1,6 @@
-package com.housecallpro.pro;
+package com.housecallpro;
 
-import com.housecallpro.pro.pom.pages.LoginPage;
+import com.housecallpro.pom.pages.HouseCallProLoginPage;
 import org.testng.annotations.Test;
 
 public class HouseCallProTest {
@@ -8,7 +8,7 @@ public class HouseCallProTest {
     @Test
     public void shouldAddNewJob() {
         // given
-        new LoginPage()
+        new HouseCallProLoginPage()
                 .open()
                 .loginUser()
                 .clickNewButton()

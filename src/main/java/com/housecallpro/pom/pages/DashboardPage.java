@@ -1,4 +1,4 @@
-package com.housecallpro.pro.pom.pages;
+package com.housecallpro.pom.pages;
 
 import com.codeborne.selenide.Condition;
 import org.openqa.selenium.By;

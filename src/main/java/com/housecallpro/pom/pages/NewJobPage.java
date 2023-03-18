@@ -1,6 +1,6 @@
-package com.housecallpro.pro.pom.pages;
+package com.housecallpro.pom.pages;
 
-import com.housecallpro.pro.utils.Generators;
+import com.housecallpro.utils.Generators;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;

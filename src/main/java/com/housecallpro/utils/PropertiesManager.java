@@ -1,4 +1,4 @@
-package com.housecallpro.pro.utils;
+package com.housecallpro.utils;
 
 
 import com.netflix.config.DynamicProperty;
