@@ -1,6 +1,8 @@
 package com.housecallpro;
 
+import com.housecallpro.pom.components.LineItemsComponent;
 import com.housecallpro.pom.pages.HouseCallProLoginPage;
+import com.housecallpro.pom.pages.NewJobPage;
 import org.testng.annotations.Test;
 
 public class HouseCallProTest {
@@ -11,12 +13,12 @@ public class HouseCallProTest {
         new HouseCallProLoginPage()
                 .open()
                 .loginUser()
-                .clickNewButton()
-                .clickJobButton()
-                .clickNewCustomerButton()
-                .createNewCustomer();
+                .clickButtonNew()
+                .clickButtonJob();
 
         // when
+        new NewJobPage().clickNewCustomerButton().createNewCustomer();
+        new LineItemsComponent().addLineItem();
 
         // then
     }

@@ -9,16 +9,16 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class DashboardPage {
 
-    private final By NEW_BUTTON = By.xpath("//span[text()='New']");
-    private final By JOB_BUTTON = By.xpath("//li[text()='Job']");
+    private final By BUTTON_NEW = By.xpath("//span[text()='New']");
+    private final By BUTTON_JOB = By.xpath("//li[text()='Job']");
 
-    public DashboardPage clickNewButton() {
-        $(NEW_BUTTON).shouldBe(Condition.visible, Duration.ofSeconds(10)).click();
+    public DashboardPage clickButtonNew() {
+        $(BUTTON_NEW).shouldBe(Condition.visible, Duration.ofSeconds(10)).click();
         return this;
     }
 
-    public NewJobPage clickJobButton() {
-        $(JOB_BUTTON).click();
+    public NewJobPage clickButtonJob() {
+        $(BUTTON_JOB).click();
         return new NewJobPage();
     }
 

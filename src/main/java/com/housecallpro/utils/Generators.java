@@ -24,4 +24,7 @@ public class Generators {
         return faker.internet().emailAddress();
     }
 
+    public static String randomItem() {
+        return faker.medical().medicineName();
+    }
 }
