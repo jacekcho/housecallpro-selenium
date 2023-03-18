@@ -12,12 +12,8 @@ public class DashboardPage {
     private final By BUTTON_NEW = By.xpath("//span[text()='New']");
     private final By BUTTON_JOB = By.xpath("//li[text()='Job']");
 
-    public DashboardPage clickButtonNew() {
+    public NewJobPage navigateToNewJobPage() {
         $(BUTTON_NEW).shouldBe(Condition.visible, Duration.ofSeconds(10)).click();
-        return this;
-    }
-
-    public NewJobPage clickButtonJob() {
         $(BUTTON_JOB).click();
         return new NewJobPage();
     }

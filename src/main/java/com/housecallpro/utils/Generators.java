@@ -25,6 +25,10 @@ public class Generators {
     }
 
     public static String randomItem() {
-        return faker.medical().medicineName();
+        return faker.food().fruit();
+    }
+
+    public static String randomSentence() {
+        return faker.chuckNorris().fact();
     }
 }

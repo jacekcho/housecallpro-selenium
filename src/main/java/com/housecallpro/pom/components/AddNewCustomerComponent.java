@@ -15,10 +15,10 @@ public class AddNewCustomerComponent {
     private final By CREATE_CUSTOMER_BUTTON = By.cssSelector("button[type='submit']");
 
     public NewJobPage createNewCustomer() {
-        $(FIRST_NAME_FIELD).sendKeys(Generators.randomFirstName());
-        $(LAST_NAME_FIELD).sendKeys(Generators.randomLastName());
-        $(MOBILE_NUMBER_FIELD).sendKeys(Generators.randomMobile());
-        $(EMAIL_FIELD).sendKeys(Generators.randomEmail());
+        $(FIRST_NAME_FIELD).setValue(Generators.randomFirstName());
+        $(LAST_NAME_FIELD).setValue(Generators.randomLastName());
+        $(MOBILE_NUMBER_FIELD).setValue(Generators.randomMobile());
+        $(EMAIL_FIELD).setValue(Generators.randomEmail());
         $(CREATE_CUSTOMER_BUTTON).click();
         return new NewJobPage();
     }

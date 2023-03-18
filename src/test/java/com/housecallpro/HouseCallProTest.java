@@ -1,9 +1,11 @@
 package com.housecallpro;
 
-import com.housecallpro.pom.components.LineItemsComponent;
 import com.housecallpro.pom.pages.HouseCallProLoginPage;
+import com.housecallpro.pom.pages.JobPage;
 import com.housecallpro.pom.pages.NewJobPage;
 import org.testng.annotations.Test;
+
+import static org.fest.assertions.Assertions.assertThat;
 
 public class HouseCallProTest {
 
@@ -13,14 +15,21 @@ public class HouseCallProTest {
         new HouseCallProLoginPage()
                 .open()
                 .loginUser()
-                .clickButtonNew()
-                .clickButtonJob();
+                .navigateToNewJobPage();
 
         // when
-        new NewJobPage().clickNewCustomerButton().createNewCustomer();
-        new LineItemsComponent().addLineItem();
+        new NewJobPage()
+                .clickNewCustomerButton()
+                .createNewCustomer()
+                .addLineItem()
+                .addPrivateNotes()
+                .clickSaveJobButton()
+                .jobPageShouldBeDisplayed();
 
         // then
+        assertThat(new JobPage().isJobCreatedInActivityFeed())
+                .as("The new job has not been added to the activity feed")
+                .isTrue();
     }
 
 }

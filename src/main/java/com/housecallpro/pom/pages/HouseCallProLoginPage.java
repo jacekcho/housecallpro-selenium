@@ -22,8 +22,8 @@ public class HouseCallProLoginPage {
     }
 
     public DashboardPage loginUser() {
-        $(USERNAME_FIELD).sendKeys(PropertiesManager.getUserLogin());
-        $(PASSWORD_FIELD).sendKeys(PropertiesManager.getUserPassword());
+        $(USERNAME_FIELD).setValue(PropertiesManager.getUserLogin());
+        $(PASSWORD_FIELD).setValue(PropertiesManager.getUserPassword());
         $(SIGN_IN_BUTTON).click();
         return new DashboardPage();
     }
