@@ -23,7 +23,7 @@ Project is created with:
  ```
 
 ## Additional information
-- The screenshot and page source for the failed test are saved in the directory:: <br>
+- The screenshot and page source for the failed test are saved in the directory: <br>
   ```housecallpro-selenium/build/reports/tests```
 
 
@@ -42,3 +42,5 @@ public class HouseCallProLoginPage {
         return this;
     }
  ```
+
+- The variables used in the project are stored in the `config.properties` file

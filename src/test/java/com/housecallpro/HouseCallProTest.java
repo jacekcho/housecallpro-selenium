@@ -27,9 +27,7 @@ public class HouseCallProTest {
                 .jobPageShouldBeDisplayed();
 
         // then
-        assertThat(new JobPage().isJobCreatedInActivityFeed())
-                .as("The new job has not been added to the activity feed")
-                .isTrue();
+        assertThat(new JobPage().isJobCreatedInActivityFeed()).isTrue();
     }
 
 }
