@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import static org.fest.assertions.Assertions.assertThat;
 
-public class HouseCallProTest {
+public class HouseCallProTest extends TestBase {
 
     @Test
     public void shouldDisplayNewCreatedJobInTheActivityFeed() {

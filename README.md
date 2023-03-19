@@ -23,8 +23,8 @@ Project is created with:
  ```
 
 ## Additional information
-- The screenshot and page source for the failed test are saved in the directory: <br>
-  ```housecallpro-selenium/build/reports/tests```
+- The screenshot for the failed test are saved in the directory: <br>
+  ```housecallpro-selenium/tests-reports```
 
 
 - Additional logs can be added using the log4j library
