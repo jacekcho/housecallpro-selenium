@@ -31,4 +31,8 @@ public class Generators {
     public static String randomSentence() {
         return faker.chuckNorris().fact();
     }
+
+    public static String randomAddress() {
+        return faker.address().fullAddress();
+    }
 }

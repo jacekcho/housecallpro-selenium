@@ -12,6 +12,7 @@ public class AddNewCustomerComponent {
     private final By LAST_NAME_FIELD = By.cssSelector("input[name='last_name']");
     private final By MOBILE_NUMBER_FIELD = By.cssSelector("[name='mobile_number']");
     private final By EMAIL_FIELD = By.cssSelector("input[name='email']");
+    private final By ADDRESS_FIELD = By.cssSelector("input[id^='service_addresses']");
     private final By CREATE_CUSTOMER_BUTTON = By.cssSelector("button[type='submit']");
 
     public NewJobPage createNewCustomer() {
@@ -19,6 +20,7 @@ public class AddNewCustomerComponent {
         $(LAST_NAME_FIELD).setValue(Generators.randomLastName());
         $(MOBILE_NUMBER_FIELD).setValue(Generators.randomMobile());
         $(EMAIL_FIELD).setValue(Generators.randomEmail());
+        $(ADDRESS_FIELD).setValue(Generators.randomAddress());
         $(CREATE_CUSTOMER_BUTTON).click();
         return new NewJobPage();
     }
