@@ -10,7 +10,7 @@ import static org.fest.assertions.Assertions.assertThat;
 public class HouseCallProTest {
 
     @Test
-    public void shouldAddNewJob() {
+    public void shouldDisplayNewCreatedJobInTheActivityFeed() {
         // given
         new HouseCallProLoginPage()
                 .open()
