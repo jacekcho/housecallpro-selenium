@@ -23,8 +23,8 @@ Project is created with:
  ```
 
 ## Additional information
-- The screenshot for the failed test are saved in the directory: <br>
-  ```housecallpro-selenium/tests-reports```
+- The screenshot and page source for the failed test are saved in the directory: <br>
+  ```housecallpro-selenium/build/test-reports```
 
 
 - Additional logs can be added using the log4j library
@@ -38,7 +38,6 @@ public class HouseCallProLoginPage {
     public HouseCallProLoginPage open() {
         LOGGER.info("Open Login Page");
         Selenide.open(PropertiesManager.getHousecallproUrl() + "/pro/log_in");
-        $(LOGIN_PAGE_CONTAINER).shouldBe(Condition.visible, Duration.ofSeconds(10));
         return this;
     }
  ```

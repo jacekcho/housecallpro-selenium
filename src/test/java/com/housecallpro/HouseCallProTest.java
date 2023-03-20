@@ -3,6 +3,7 @@ package com.housecallpro;
 import com.housecallpro.pom.pages.HouseCallProLoginPage;
 import com.housecallpro.pom.pages.JobPage;
 import com.housecallpro.pom.pages.NewJobPage;
+import com.housecallpro.utils.TestBase;
 import org.testng.annotations.Test;
 
 import static org.fest.assertions.Assertions.assertThat;
